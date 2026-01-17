@@ -1,4 +1,4 @@
-import { defineConfig } from "tinacms";
+¨¨import { defineConfig } from "tinacms";
 
 export default defineConfig({
   branch: "main",
@@ -8,12 +8,6 @@ export default defineConfig({
     outputFolder: "admin",
     publicFolder: "./",
   },
-  media: {
-    tina: {
-      mediaRoot: "uploads",
-      publicFolder: "./",
-    },
-  },
   schema: {
     collections: [
       {
@@ -22,19 +16,8 @@ export default defineConfig({
         path: "content",
         format: "json",
         fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Nadpis webu",
-          },
-          {
-            type: "string",
-            name: "description",
-            label: "Popis podniku",
-            ui: {
-              component: "textarea",
-            },
-          },
+          { type: "string", name: "title", label: "Nadpis" },
+          { type: "string", name: "text", label: "Text", ui: { component: "textarea" } },
         ],
       },
     ],
