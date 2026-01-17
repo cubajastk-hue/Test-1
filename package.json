@@ -1,0 +1,12 @@
+{
+  "name": "muj-side-hustle",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tinacms dev",
+    "build": "tinacms build"
+  },
+  "dependencies": {
+    "@tinacms/cli": "latest",
+    "tinacms": "latest"
+  }
+}
