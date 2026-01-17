@@ -1,9 +1,9 @@
-¨¨import { defineConfig } from "tinacms";
+import { defineConfig } from "tinacms";
 
 export default defineConfig({
   branch: "main",
-  clientId: process.env.TINA_PUBLIC_CLIENT_ID,
-  token: process.env.TINA_TOKEN,
+  clientId: "d962bdb9-bfcb-4495-9f1e-fce87ca5e799",
+  token: "98d5b7ab21aa935449158c558aa0a915bee85973",
   build: {
     outputFolder: "admin",
     publicFolder: "./",
@@ -12,12 +12,12 @@ export default defineConfig({
     collections: [
       {
         name: "post",
-        label: "Domovská stránka",
+        label: "Příspěvky",
         path: "content",
         format: "json",
         fields: [
           { type: "string", name: "title", label: "Nadpis" },
-          { type: "string", name: "text", label: "Text", ui: { component: "textarea" } },
+          { type: "string", name: "text", label: "Text", ui: { component: "textarea" } }
         ],
       },
     ],
